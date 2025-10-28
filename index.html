@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from prepcoin.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Oct 2025 15:32:05 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Original Paper, Now on the Blockchain.">
+  <link rel="icon" href="images/about.png" type="image/x-icon">
+  <title>Bitcoin Whitepaper</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/uses.css">
+  <link rel="stylesheet" href="styles/shop.css">
+  <link rel="stylesheet" href="styles/roadmap.css">
+  <link rel="stylesheet" href="styles/community.css">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/faqs.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-navbar py-3">
+    <div class="container">
+      <!-- Logo and Brand -->
+      <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="#">
+        <img src="images/about.png" alt="Logo"
+          style="width: 50px; height: 50px; object-fit: contain; margin-right: 10px;">
+        Bitcoin Whitepaper
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#utilities">Utilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#community-content">Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#bitcoin-v1">BTC1.0</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" target="_blank" href="#community-section">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#pdf-section" target="_blank">Whitepaper</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success rounded-pill ms-3"
+              href="https://www.pump.fun"
+              target="_blank">Buy Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="images/video.mp4" type="video/mp4">
+  </video>
+
+ <div class="hero-content">
+    <h1 class="hero-title">Bitcoin Whitepaper</h1>
+  <p class="hero-subtitle">  The Revolution Began on <span class="highlight-date">31 October 2008</span></p>
+    <a href="https://www.ccn.com/news/technology/bitcoin-white-paper-halloween-intentional/" class="btn">Read the News</a>
+      <div class="hero-links">
+      <div class="token-address" id="tokenAddress" onclick="copyCA()">
+        <span>CA: 0x1234...ABCD</span>
+        <button class="copy-btn">📋 Copy</button>
+
+  </div>
+   <div class="platform-icons">
+        <a href="https://pump.fun" target="_blank"><img src="images/pumpfun.png" alt="Pump.fun"></a>
+        <a href="https://dexscreener.com" target="_blank"><img src="images/dexscreener.png" alt="Dexscreener"></a>
+        <a href="https://dextools.io" target="_blank"><img src="images/dextools.png" alt="Dextools"></a>
+        <a href="https://coinmarketcap.com" target="_blank"><img src="images/cmc.png" alt="CoinMarketCap"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyCA() {
+    const ca = "0x1234567890abcdef1234567890abcdef12345678"; // your token CA
+    navigator.clipboard.writeText(ca);
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = "✅ Copied!";
+    setTimeout(() => (btn.textContent = "📋 Copy"), 2000);
+  }
+</script>
+
+   
+
+       <section class="bitcoin-v1">
+  <div class="overlay"></div>
+  <div class="bitcoin-v1-content">
+    <h2>Bitcoin V1 — The Beginning</h2>
+    <p>The original revolution that started it all.</p>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1131326269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="bitcoinv1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <a href="https://youtu.be/Um63OQz3bjo?si=7uOSrG-xc64_EgY6" 
+       target="_blank" 
+       class="btn-watch">Watch Original Video</a>
+</section>
+
+<section id="pdf-section" class="pdf-container">
+  <h2 class="section-title">The Original Bitcoin Whitepaper (2008)</h2>
+
+  <!-- Embedded Bitcoin Whitepaper -->
+  <iframe
+    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://bitcoinwhitepaper.live/bitcoin.pdf"
+    class="pdf-viewer"
+    title="Bitcoin Whitepaper"
+  ></iframe>
+
+  <a href="https://bitcoinwhitepaper.live/bitcoin.pdf" target="_blank" class="fullscreen-btn">
+    🔍 Read Fullscreen
+  </a>
+</section>
+
+<section class="next-content">
+  <h2>Continue the Journey</h2>
+  <p>
+    Scroll below to discover how <strong><h2>Bitcoin Whitepaper</h2></strong> brings the whitepaper’s legacy into a new meme-era revolution.
+  </p>
+</section>
+
+<style>
+.pdf-container {
+    text-align: center;
+    padding: 60px 0;
+    background: url('images/aa.jpg') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+/* Optional: dark overlay to highlight content */
+.pdf-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* dim background for readability */
+    z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.pdf-container h2,
+.pdf-container .pdf-viewer,
+.pdf-container .fullscreen-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff9900; /* orange color */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* optional: makes it pop over background */
+}
+
+
+/* Embedded PDF Viewer */
+.pdf-viewer {
+    width: 80%;
+    height: 600px; /* reduced height for desktop */
+    max-height: 80vh; /* prevent overflowing screen */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+/* Fullscreen button styling */
+.fullscreen-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #111827;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    z-index: 2; /* ensure it’s above overlay */
+}
+
+.fullscreen-btn:hover {
+    background: #1f2937;
+}
+
+/* Make PDF responsive on smaller screens */
+@media (max-width: 1024px) {
+    .pdf-viewer {
+        width: 90%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pdf-viewer {
+        width: 95%;
+        height: 400px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+ 
+/* Next content immediately after PDF, no extra space */
+.next-content {
+  padding: 20px 20px; /* reduced padding */
+  text-align: center;
+  background: transparent; /* no background */
+  margin-top: -20px; /* pull it closer to PDF viewer */
+}
+
+.next-content h2 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0; /* remove extra margin above */
+  color: #ff9900; /* orange */
+}
+
+.next-content p {
+  color: #ffffff; /* white */
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pdf-viewer {
+      width: 95%;
+      height: 600px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Content -->
+        <div class="col-lg-6">
+          <h2 class="display-4 fw-bold mb-4 animate-on-scroll animate__animated about-heading"
+  data-animation="animate__fadeInDown">
+  About Bitcoin Whitepaper (BTCw)
+</h2>
+
+          <p class="lead mb-4 animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
+           <b> On October 31, 2008 </b>, an anonymous figure named Satoshi Nakamoto dropped a simple nine-page PDF into a small cryptography mailing list.
+That document — the Bitcoin Whitepaper — quietly ignited the biggest financial revolution in human history.
+It wasn’t just a paper.
+It was the first spark of decentralization, the seed of a movement built on freedom, trustlessness, and code.
+          </p>
+          <p class="lead mb-4 animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
+           Seventeen Years Later...
+          </p>
+          <p class="lead animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
+            On October 31, 2025, exactly 17 years later, the story continues.
+Bitcoin Whitepaper (BTCw) is born — a meme coin tribute to the moment that started it all.
+Not just another token, but a symbol of how far crypto has come — and how much further the community can take it.
+
+No false promises.
+No endless roadmaps.
+Just the original spirit of crypto — community-driven, experimental, and unstoppable.</p>
+        </div>
+        <!-- Image -->
+<div class="col-lg-6 animate-on-scroll animate__animated paper-container" data-animation="animate__fadeInRight">
+  <img src="images/about.png" alt="BTCw Image" class="img-fluid rounded shadow-lg paper-image">
+</div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Uses Section -->
+ <section id="uses" class="uses py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <h2 class="fw-bold mb-5 animate-on-scroll animate__animated" 
+        data-animation="animate__fadeInDown">
+      Bitcoin & Bitcoin Whitepaper
+    </h2>
+
+
+
+      <div class="row">
+        <!-- PREP Card -->
+        <div class="col-md-6 mb-4 animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h3 class="card-title">
+  <img src="images/btc.png" alt="Logo" class="title-logo"> Bitcoin:
+</h3>
+              <p class="text-white">Bitcoin wasn’t just another digital currency. It was a revolution.</p>
+              <ul class="list-unstyled">
+                <li>On October 31, 2008, Satoshi Nakamoto introduced the Bitcoin Whitepaper.</li>
+                <li> A blueprint for freedom, decentralization, and financial sovereignty.</li>
+                <li>Over the years, the movement has been overshadowed by politics, influencers, and hype-driven culture.</li>
+                <li> The original meme and rebellious spirit that made Bitcoin special has been forgotten..</li>
+                <!-- <li><strong>Get shop discounts</strong> (100 PREP = $1 off, Q1 2026).</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prep-STK Card -->
+        <div class="col-md-6 mb-4 animate-on-scroll animate__animated" data-animation="animate__fadeInRight">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+                      <h3 class="card-title">
+  <img src="images/about.png" alt="Logo" class="title-logo"> Bitcoin Whitepaper:
+</h3>
+              <p class="text-white">Born as a tribute to the original Bitcoin Whitepaper, BTCw is here to restore freedom,fun, and creativity in the crypto world.</p>
+              <ul class="list-unstyled">
+                <li>Celebrating the spirit of decentralization</li>
+                <li>Reigniting the original Bitcoin culture</li>
+                <li>Giving the community full freedom to create, experiment, and share ideas</li>
+                <li>No promises. No roadmap. Just memes, code, and unstoppable community energy — exactly what Bitcoin was meant to be</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop">
+  <div class="container text-center">
+
+  <h2 class="fw-bold mb-5 meme-heading">Meme Chronicles</h2>
+</div>
+
+
+    <div class="meme-gallery">
+      <button class="scroll-btn left-btn">&#10094;</button>
+
+      <div class="meme-track">
+        <!-- Add your meme images below -->
+        <img src="images/meme1.jpg" alt="Meme 1">
+        <img src="images/meme2.jpg" alt="Meme 2">
+        <img src="images/meme3.jpg" alt="Meme 3">
+        <img src="images/meme4.jpg" alt="Meme 4">
+        <img src="images/meme5.jpg" alt="Meme 5">
+        <img src="images/meme6.jpg" alt="Meme 6">
+        <img src="images/meme7.jpg" alt="Meme 7">
+        <img src="images/meme8.jpg" alt="Meme 8">
+        <img src="images/meme9.jpg" alt="Meme 9">
+        <img src="images/meme10.jpg" alt="Meme 10">
+         <img src="images/meme11.jpg" alt="Meme 10">
+          <img src="images/meme12.jpg" alt="Meme 10">
+      </div>
+
+      <button class="scroll-btn right-btn">&#10095;</button>
+    </div>
+
+    <script>
+  const memeTrack = document.querySelector('.meme-track');
+  const leftBtn = document.querySelector('.left-btn');
+  const rightBtn = document.querySelector('.right-btn');
+
+  if (memeTrack && leftBtn && rightBtn) {
+    leftBtn.addEventListener('click', () => {
+      memeTrack.scrollBy({ left: -400, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      memeTrack.scrollBy({ left: 400, behavior: 'smooth' });
+    });
+  } else {
+    console.warn('Meme gallery elements not found. Check class names and script placement.');
+  }
+</script>
+  </div>
+</section>
+
+  <!-- Roadmap Section -->
+ 
+       <section id="utilities" class="roadmap token-utilities py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5" style="color: #ff9900;">Token Utilities</h2>
+
+    <div class="utilities-grid">
+      <div class="utility-item">
+        <div class="icon">📜</div>
+        <h4>Whitepaper to Token Platform</h4>
+        <p>Transform the original Bitcoin whitepaper vision into a real, community-driven token ecosystem that rewards holders and builders alike.</p>
+      </div>
+
+      <div class="utility-item">
+        <div class="icon">💎</div>
+        <h4>Staking</h4>
+        <p>Stake tokens to earn rewards, strengthen the network, and gain early access to future project launches and meme events.</p>
+      </div>
+
+      <div class="utility-item">
+        <div class="icon">🎮</div>
+        <h4>Social & Gamification</h4>
+        <p>Engage in meme missions, leaderboards, and interactive games that let you earn and level up within the Bitcoin Whitepaper ecosystem.</p>
+      </div>
+
+      <div class="utility-item">
+        <div class="icon">🤝</div>
+        <h4>Donation</h4>
+        <p>Support open-source Bitcoin development, meme creators, and decentralized freedom causes directly through token-powered donations.</p>
+      </div>
+
+      <div class="utility-item">
+        <div class="icon">🗳️</div>
+        <h4>Governance & DAO</h4>
+        <p>Shape the project’s direction — from roadmap updates to partnerships — through decentralized voting and DAO governance mechanisms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        
+
+  <!-- Community & Content Section -->
+  
+
+  <section id="community-content">
+  <div class="container text-center">
+   
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Live Dexscreener Chart</h5>
+
+        <!-- Dexscreener Embed -->
+        <div id="dexscreener-embed">
+          <iframe 
+            src="https://dexscreener.com/solana/35TqQMeiRwEbK6FR5qiPwastuAAvo32VjnULJpxVSxUK?embed=1&loadChartSettings=0&trades=0&tabs=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15">
+          </iframe>
+        </div>
+
+        <p style="margin-top:15px; font-size:0.9rem; color:#ccc;">
+          Live chart powered by <a href="https://dexscreener.com" target="_blank">Dexscreener</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Community & Banner Section -->
+<section id="community-section" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Column: Community + Disclaimer -->
+      <div class="col-lg-6 mb-4">
+        <div class="community-card position-relative p-4">
+          <h3 class="mb-3" style="color:#ff9900;">Community & Disclaimer</h3>
+          <p>Hop into chats, memes, and chaos. BTCw is all about freedom, memes, and unstoppable energy.</p>
+          <p class="text-warning fst-italic">
+            Disclaimer: This is a memetic project. Any resemblance to serious financial advice is purely coincidental. HODL at your own risk! 😎
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://t.me/YourTelegram" target="_blank">
+              <img src="images/telegram.png" alt="Telegram" class="social-logo">
+            </a>
+            <a href="https://x.com/YourXHandle" target="_blank">
+              <img src="images/xlogo.png" alt="X / Twitter" class="social-logo">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Banner -->
+      <div class="col-lg-6 mb-4">
+        <div class="banner-card position-relative">
+          <img src="images/buynow.jpg" alt="BTCw Banner" class="img-fluid rounded banner-image">
+          <div class="banner-overlay">
+            <a href="#" class="btn btn-success btn-lg">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+   <!-- Copyright -->
+      <div class="text-center">
+        <p style="color: #777;">&copy; 2025 Bitcoin Whitepaper. All Rights Reserved.</p>
+      </div>
+
+
+      <hr class="my-4" style="background-color: #aaa;">
+
+
+
+
+
+
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
+
+
+
+  <!-- animate -->
+  <script>
+    // Function to handle the intersection of the target elements
+    function handleIntersection(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const targetElement = entry.target;
+          const animationClass = targetElement.dataset.animation;
+
+          if (animationClass) {
+            targetElement.classList.add(animationClass);
+            // Remove the animate-on-scroll class to prevent animation on subsequent scrolls
+            targetElement.classList.remove('animate-on-scroll');
+          }
+        }
+      });
+    }
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Observe all elements with the "animate-on-scroll" class
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach((element) => {
+      observer.observe(element);
+    });
+  </script>
+
+
+  <!-- Bootstrap 5 JS -->
+  <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Set the target date: 8th May, 12:00 PM UK time (BST or GMT depending on time of year)
+    const targetDate = new Date("May 8, 2025 12:00:00 GMT+0100").getTime(); // UK is GMT+1 in May (Daylight Saving Time)
+  
+    const countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+  
+      if (distance <= 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerText = 0;
+        document.getElementById("hours").innerText = 0;
+        document.getElementById("minutes").innerText = 0;
+        document.getElementById("seconds").innerText = 0;
+        return;
+      }
+  
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }, 1000);
+  </script>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Show popup after 1 second
+    setTimeout(function() {
+      document.getElementById("entry-popup").classList.add("active");
+    }, 1000);
+
+    // Close button
+    document.querySelector(".popup-close").addEventListener("click", function() {
+      document.getElementById("entry-popup").classList.remove("active");
+    });
+
+    // Click outside content to close
+    document.querySelector(".popup-overlay").addEventListener("click", function(e) {
+      if(e.target === this) {
+        this.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+</body>
+<!-- Popup Modal -->
+<div id="entry-popup" class="popup-overlay">
+  <div class="popup-content">
+    <img src="images/buynow.jpg" alt="Buy Now" class="popup-image">
+    <a href="https://pump.fun" class="btn btn-success popup-btn">Buy Now</a>
+    <span class="popup-close">&times;</span>
+  </div>
+</div>
+
+
+
+
+</html>
